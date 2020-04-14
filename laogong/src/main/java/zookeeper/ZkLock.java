@@ -5,7 +5,7 @@ package zookeeper;
  * @Author: 敖丙
  * @date: 2020-04-06
  **/
-public class ZkLock implements Runnable {
+public class ZkLock {
     static int inventory = 10;
     private static final int NUM = 5;
 
@@ -13,7 +13,6 @@ public class ZkLock implements Runnable {
 
     public static void main(String[] args) {
         try {
-
             for (int i = 0; i < NUM; i++) {
                 new Thread(new Runnable() {
                     public void run() {
@@ -33,19 +32,9 @@ public class ZkLock implements Runnable {
                     }
                 }).start();
             }
-
-
         } catch (Exception e) {
             e.printStackTrace();
         }
-    }
-
-    public void run() {
-
-    }
-
-    public static void test() {
-
     }
 
 }
