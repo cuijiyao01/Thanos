@@ -31,7 +31,7 @@ public class RedisLock {
      * @param id
      * @return
      */
-    public boolean lock(String id) {
+    public boolean  lock(String id) {
         Long start = System.currentTimeMillis();
         Jedis jedis = jedisPool.getResource();
         try {
