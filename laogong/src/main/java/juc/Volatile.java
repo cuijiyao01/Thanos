@@ -1,9 +1,11 @@
+package juc;
+
 /**
  * @Description: 测试类
  * @Author: 敖丙
  * @date: 2020-04-26
  **/
-public class Test {
+public class Volatile {
     public static void main(String[] args) {
         Aobing a = new Aobing();
         a.start();

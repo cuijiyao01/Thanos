@@ -5,7 +5,6 @@ import redis.clients.jedis.Jedis;
 import redis.clients.jedis.JedisPool;
 
 import java.util.Arrays;
-import java.util.HashSet;
 import java.util.List;
 
 /**
