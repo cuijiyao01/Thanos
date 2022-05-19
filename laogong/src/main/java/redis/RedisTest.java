@@ -38,7 +38,7 @@ public class RedisTest {
                     }
                     try {
                         System.out.println("AAA");
-                        cyclicBarrier.await();
+                            cyclicBarrier.await();
                         System.out.println("BBB");
                     } catch (InterruptedException e) {
                         e.printStackTrace();
